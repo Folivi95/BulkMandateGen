@@ -1,0 +1,35 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
+    "iisExpress": {
+      "applicationUrl": "http://localhost:54100",
+      "sslPort": 44344
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DEMO_APIKEY": "164570",
+        "DEMO_SERVICETYPEID": "2040732294",
+        "DEMO_MERCHANTID": "2049952112",
+        "SETUP_MANDATE_ENDPOINT": "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/echannel/mandate/setup"
+      }
+    },
+    "BulkMandateGen": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DEMO_APIKEY": "164570",
+        "DEMO_SERVICETYPEID": "2040732294",
+        "DEMO_MERCHANTID": "2049952112",
+        "SETUP_MANDATE_ENDPOINT": "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/echannel/mandate/setup"
+      }
+    }
+  }
+}
