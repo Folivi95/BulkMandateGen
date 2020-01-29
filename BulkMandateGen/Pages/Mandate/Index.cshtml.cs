@@ -70,7 +70,6 @@ namespace BulkMandateGen
                         mandate.RequestId = res.requestId;
 
                         _context.Mandates.Update(mandate);
-                        await _context.SaveChangesAsync();
                     }
                     catch (Exception ex)
                     {
@@ -78,6 +77,9 @@ namespace BulkMandateGen
                     }
                 }
             }
+
+            //save changes to database
+            await _context.SaveChangesAsync();
 
         }
 
