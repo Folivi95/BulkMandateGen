@@ -20,5 +20,6 @@ namespace BulkMandateGen.Data
         public string PayerBankCode { get; set; }
         public string MandateId { get; set; }
         public string RequestId { get; set; }
+        public string MandateFormUrl { get; set; }
     }
 }

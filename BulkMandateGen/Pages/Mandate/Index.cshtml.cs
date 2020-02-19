@@ -69,6 +69,12 @@ namespace BulkMandateGen
                         mandate.MandateId = res.mandateId;
                         mandate.RequestId = res.requestId;
 
+                        //get mandate form URL
+                        var valuesToHash = Environment.GetEnvironmentVariables("DEMO_MERCHANTID") + Environment.GetEnvironmentVariables("DEMO_APIKEY") + res.requestId;
+                        var mandateFormApiHash = ComputeSHAHash(valuesToHash);
+                        var mandateformURL = $"https://remitademo.net/remita/ecomm/mandate/form/{Environment.GetEnvironmentVariable("DEMO_MERCHANTID")}" +
+                            $"/{mandateFormApiHash}/{res.mandateId}/{res.requestId}/rest.reg";
+
                         _context.Mandates.Update(mandate);
                     }
                     catch (Exception ex)
