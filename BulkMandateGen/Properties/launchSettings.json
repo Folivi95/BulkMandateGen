@@ -26,9 +26,9 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DEMO_APIKEY": "164570",
-        "DEMO_SERVICETYPEID": "2040732294",
-        "DEMO_MERCHANTID": "2049952112",
-        "SETUP_MANDATE_ENDPOINT": "https://login.remita.net/remita/exapp/api/v1/send/api/echannelsvc/echannel/mandate/setup"
+        "DEMO_SERVICETYPEID": "35126630",
+        "DEMO_MERCHANTID": "27768931",
+        "SETUP_MANDATE_ENDPOINT": "https://remitademo.net/remita/exapp/api/v1/send/api/echannelsvc/echannel/mandate/setup"
       }
     }
   }
